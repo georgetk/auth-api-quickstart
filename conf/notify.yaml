@@ -30,18 +30,18 @@ sms:
   default: twilio
   providers:
     msg91:
-      from: "CareHack"
+      from: 
       authKey:
         secretKeyRef:
           key: notify.msg91.key
           name: hasura-secrets
     twilio:
-      from: ""
-      accountSid: AC7a14e3fcbbae35343330af6a9ecf3a16
+      from: "CareHack"
+      accountSid: AC9267d65a7c6b9090e59ef09e0e98d998
         secretKeyRef:
           key: notify.twilio.accountsid
           name: hasura-secrets
-      authToken: 7a3a33d9b086a139d22cacc3998a2d80
+      authToken: c905e379c930c1f935d3e872b7313e41
         secretKeyRef:
           key: notify.twilio.authtoken
           name: hasura-secrets

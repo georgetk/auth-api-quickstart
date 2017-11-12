@@ -36,7 +36,7 @@ sms:
           key: notify.msg91.key
           name: hasura-secrets
     twilio:
-      from: "CareHack"
+      from: "+1 830-423-5195"
       accountSid:
         secretKeyRef:
           key: notify.twilio.accountsid

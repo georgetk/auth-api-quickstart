@@ -169,3 +169,14 @@ app:
     upstreamServicePort: 80
 
 # To see actual endpoints for these routes, use `$ hasura cluster status`
+
+mymicroservice:
+  /:
+    corsPolicy: allow_all
+    upstreamService:
+      name: mymicroservice
+      namespace: '{{ cluster.metadata.namespaces.user }}'
+    upstreamServicePath: /
+    upstreamServicePort: 80
+
+

@@ -2,35 +2,40 @@
 <html >
 <head>
 	<title>Sailing Hotel</title>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("form").submit(function(){
+	<script type="text/javascript" src="./require.js">
+	function fn(){
+		alert("hi")
+	/* var fetchAction =  require('fetch');
 
+	 var url = "https://auth.bethink79.hasura-app.io/v1/providers/mobile-password/resend-otp";
 
-			var xhr = new XMLHttpRequest();
-var url = "https://auth.bethink79.hasura-app.io/v1/signup";
-xhr.open("POST", url, true);
-xhr.setRequestHeader("Content-type", "application/json");
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        var json = JSON.parse(xhr.responseText); 
-        console.log("Hi");
-   }
-};
-var data = JSON.stringify({
-  "provider" : "username",
-  "data" : {
-     "username": "johnsmith",
-     "password": "somepass123"
-  }
-});
-xhr.send(data);
+	 var requestOptions = {
+	     "method": "POST",
+	     "headers": {
+	         "Content-Type": "application/json"
+	     }
+	 };
 
+	 var body = {
+	     "mobile": "9544481949",
+	     "country_code": "91"
+	 };
 
+	 requestOptions.body = JSON.stringify(body);
 
-    });
-});
+	 fetchAction(url, requestOptions)
+	 .then(function(response) {
+	 	return response.json();
+	 })
+	 .then(function(result) {
+	 	console.log(result);
+	 })
+	 .catch(function(error) {
+	 	console.log('Request Failed:' + error);
+	});		*/
+
+}
+
 </script>
 </head>
 <body>
@@ -42,15 +47,15 @@ xhr.send(data);
          <form action="">
 
             <br><br>
-            <input id="mobilel" type="text" name='username' placeholder="Mobile">
+            <input type="text" >
 
             <br><br>
-            <input id="passwordl" type="Password" name='password' placeholder="Password">
+            <input  type="Password" >
             <br><br>
             <br><br>
             <br><br>
             <br><br>
-            <input name="btnsbmt" type="submit" value="Log In">
+            <input type="submit" onclick="fn()">
         </form>
      </div>
 

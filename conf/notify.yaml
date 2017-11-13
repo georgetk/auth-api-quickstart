@@ -30,7 +30,7 @@ sms:
   default: "msg91"
   providers:
     msg91:
-      from: "CarePatient"
+      from: "WeCare"
       authKey:
         secretKeyRef:
           key: notify.msg91.key

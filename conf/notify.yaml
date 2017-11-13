@@ -27,7 +27,7 @@ email:
           name: hasura-secrets
 sms:
   # default can take values 'msg91' or 'twilio'
-  default: twilio
+  default: msg91
   providers:
     msg91:
       from: ""
@@ -36,7 +36,7 @@ sms:
           key: notify.msg91.key
           name: hasura-secrets
     twilio:
-      from: "+1 830-423-5195"
+      from: ""
       accountSid:
         secretKeyRef:
           key: notify.twilio.accountsid

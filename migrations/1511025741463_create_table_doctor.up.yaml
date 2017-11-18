@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "doctor"(doc_id serial NOT NULL, name text NOT NULL, dept text
+      NOT NULL, available_days text NOT NULL, PRIMARY KEY (doc_id) )
+  type: run_sql
+- args:
+    name: doctor
+  type: add_existing_table_or_view
